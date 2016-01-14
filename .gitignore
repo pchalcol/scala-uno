@@ -1,0 +1,8 @@
+*.vpp~*
+*.vpp.working
+.idea
+*.class
+target
+build
+*.iml
+.gradle/

@@ -1,0 +1,16 @@
+<configuration debug="true">
+
+    <!-- Appenders console -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %boldMagenta(%d{yyyy-MM-dd HH:mm:ss.SSSZ})|[%boldGreen(%thread)]|%boldBlue(%-5p)|%c{0}|%m%n%throwable{full}
+            </pattern>
+        </encoder>
+    </appender>
+
+    <root level="info"  additivity="false" >
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
